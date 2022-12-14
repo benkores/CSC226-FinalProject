@@ -9,6 +9,6 @@ COPY package-lock.json ./
 RUN npm install
 RUN npm install @mui/material @emotion/react @emotion/styled
 RUN npm install @mui/icons-material
-#RUN npm install react-scripts@latest -g
+RUN npm install react-scripts@latest -g
 # start app
 CMD ["npm", "start"]
