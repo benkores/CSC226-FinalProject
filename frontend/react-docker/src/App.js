@@ -2,22 +2,13 @@ import logo from './logo.svg';
 import './App.css';
 import MyComponent from "./components/MyComponent";
 import {Autocomplete, Button, Checkbox, Slider, Stack, TextField} from "@mui/material";
-import {VolumeDown, VolumeUp} from "@mui/icons-material";
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-          <MyComponent></MyComponent>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <img src={require('./imgs/news_icon.png')} className="App-logo" alt="logo" />
+        <h2>Live News from 7,500 News Sources Worldwide!</h2>
       </header>
     </div>
   );
