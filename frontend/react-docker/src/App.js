@@ -14,7 +14,7 @@ function App() {
       <h2 class="mb-5">Enter a country, news source, and category below to get started</h2><br></br>
       <h3>Countries:</h3><TagInput/>
       <h3>News Sources:</h3><TagInput/>
-      <h3>Categories:</h3>
+      <h3>Categories:</h3><TagInput />
       <button type="button" class="btn btn-primary btn-lg btn-block w-75 mt-5 mb-5">Search</button>
     </div>
   );
