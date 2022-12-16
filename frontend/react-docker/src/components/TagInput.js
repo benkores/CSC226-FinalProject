@@ -1,6 +1,7 @@
 import React from "react";
 import '../App.css';
 import { useState } from 'react';
+import 'bootstrap/dist/css/bootstrap.css';
 
 function TagInput(){
     const [tags, setTags] = useState([]);
@@ -20,7 +21,7 @@ function TagInput(){
 
     
     return (
-        <div className="tags-input-container">
+        <div className="tags-input-container mb-3">
             { tags.map((tag, index) => (
                 <div className="tag-item" key={index}>
                     <span className="text">{tag}</span>
