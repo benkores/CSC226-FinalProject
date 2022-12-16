@@ -39,6 +39,7 @@
   justify-content: center;
   flex-wrap: wrap;
   gap: .5em;
+  background-color: #101010;
 }
 
 .tag-item{
@@ -70,8 +71,18 @@
   padding: .5em 0;
   border: none;
   outline: none;
+  background-color: #101010;
+  color: white;
 }
 
 .btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
   background-color: blue !important;
+}
+
+div {
+  background-color: #202020;
+}
+
+h2, h3 {
+  color: white;
 }
