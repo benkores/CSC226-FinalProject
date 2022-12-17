@@ -40,9 +40,6 @@ function TagInput(props) {
         onChange={(e) => setValue(e.target.value)}
       />
       <div>
-        {tags.length === 0 && (
-          <div style={{ color: "red" }}>Please enter at least one tag.</div>
-        )}
       </div>
     </div>
   );
