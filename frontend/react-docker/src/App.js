@@ -3,7 +3,6 @@ import MyComponent from "./components/MyComponent.js";
 import "./App.css";
 import TagInput from "./components/TagInput.js";
 import "bootstrap/dist/css/bootstrap.css";
-import NavigationBar from "./components/NavigationBar.js";
 
 function App() {
   const [countries, setCountries] = useState([]);
@@ -20,7 +19,6 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <NavigationBar />
         <img
           src={require("./imgs/news_icon.png")}
           className="App-logo"
