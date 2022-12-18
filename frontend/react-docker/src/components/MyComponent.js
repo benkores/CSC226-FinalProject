@@ -11,7 +11,7 @@ class MyComponent extends React.Component {
     }
 
     componentDidMount() {
-        fetch("http://localhost/api/read.php?sources=cnn&categories=general")
+        fetch("http://localhost/api/read.php?countries=us&sources=cnn&categories=general")
             .then(res => res.json())
             .then(
                 (result) => {

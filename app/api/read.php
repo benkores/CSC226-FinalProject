@@ -9,7 +9,8 @@ $ch = curl_init();
 
 $source = isset($_GET['sources']) ? $_GET['sources'] : 'cnn';
 $category = isset($_GET['categories']) ? $_GET['categories'] : 'general';
-curl_setopt($ch, CURLOPT_URL, 'https://api.mediastack.com/v1/news?access_key=e51b8819364d71188fbdfc28e7a9777a&countries=us&sources=' . $source . '&categories=' . $category);
+$country = isset($_GET['countries']) ? $_GET['countries'] : 'us';
+curl_setopt($ch, CURLOPT_URL, 'https://api.mediastack.com/v1/news?access_key=e51b8819364d71188fbdfc28e7a9777a&countries=' . $country . '&sources=' . $source . '&categories=' . $category);
 
 // Set curl options to enable HTTPS and follow redirects
 curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, true);
