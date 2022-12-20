@@ -7,6 +7,11 @@ function App() {
   const [countries, setCountries] = useState([]);
   const [sources, setSources] = useState([]);
   const [categories, setCategories] = useState([]);
+  const [showMyComponent, setShowMyComponent] = useState(false);
+
+  function SearchButtonClicked() {
+    setShowMyComponent(true);
+  }
 
   return (
     <div className="App">
@@ -32,14 +37,14 @@ function App() {
       <TagInput tags={categories} setTags={setCategories} />
       <button
         className="btn btn-primary btn-lg btn-block w-75 mt-5 mb-5"
-        onClick={() => (
-          <MyComponent countries={countries.join(",")}
-            sources={sources.join(",")}
-            categories={categories.join(",")} />
-        )}
-      >
+        onClick={SearchButtonClicked}>
         Search
       </button>
+      {showMyComponent && (
+        <MyComponent countries={countries.join(",")}
+          sources={sources.join(",")}
+          categories={categories.join(",")} />
+      )}
     </div >
   );
 }
