@@ -38,10 +38,10 @@ function MyComponent(props) {
             {items.data.map(item => (
                 <div className="card mb-3 border-0" style={{ backgroundColor: "#202020" }}>
                     <div className="card-body w-100 mx-auto">
-                        <h5 className="card-title text-white">Title: {item.title}</h5>
-                        <p className="card-text">Author: {item.author}</p>
-                        <p className="card-text">Description: {item.description}</p>
-                        <p className="card-text">Source: {item.source}</p>
+                        <h5 className="card-title text-white">{item.title}</h5>
+                        <p className="card-text">{item.author}</p>
+                        <p className="card-text">{item.description}</p>
+                        <p className="card-text">{item.source}</p>
                         <a href={item.url} className="btn btn-primary w-25" target="_blank" role="button">View Article</a>
                     </div>
                 </div>
