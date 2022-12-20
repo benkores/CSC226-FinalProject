@@ -2,17 +2,12 @@ import React, { useState } from "react";
 import MyComponent from "./components/MyComponent.js";
 import "./App.css";
 import TagInput from "./components/TagInput.js";
- 
+
 function App() {
   const [countries, setCountries] = useState([]);
   const [sources, setSources] = useState([]);
   const [categories, setCategories] = useState([]);
-  const [showMyComponent, setShowMyComponent] = useState(false);
- 
-  function handleSubmit() {
-    setShowMyComponent(true);
-  }
- 
+
   return (
     <div className="App">
       <header className="App-header">
@@ -37,17 +32,16 @@ function App() {
       <TagInput tags={categories} setTags={setCategories} />
       <button
         className="btn btn-primary btn-lg btn-block w-75 mt-5 mb-5"
-        onClick={handleSubmit}
+        onClick={() => (
+          <MyComponent countries={countries.join(",")}
+            sources={sources.join(",")}
+            categories={categories.join(",")} />
+        )}
       >
         Search
       </button>
-      {showMyComponent && (
-        <MyComponent countries={countries.join(",")}
-          sources={sources.join(",")}
-          categories={categories.join(",")} />
-      )}
-    </div>
+    </div >
   );
 }
- 
+
 export default App;
