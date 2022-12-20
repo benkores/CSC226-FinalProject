@@ -28,7 +28,7 @@ function MyComponent(props) {
         return <div><h5 className="text-white">Error: unable to search for news articles</h5></div>
     }
     else if (!isLoaded) {
-        return <div><h5 className="text-white">Loading</h5></div>;
+        return <div><h5 className="text-white">Loading...</h5></div>;
     } else if (items && items.error) {
         return <div><h5 className="text-white">Error: unable to search for news articles</h5></div>
     } else if (items.pagination.count == 0) {
