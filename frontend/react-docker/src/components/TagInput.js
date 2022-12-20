@@ -1,7 +1,6 @@
 import React from "react";
 import "../App.css";
 import { useState } from "react";
-import "bootstrap/dist/css/bootstrap.css";
 
 function TagInput(props) {
   const { tags, setTags } = props;

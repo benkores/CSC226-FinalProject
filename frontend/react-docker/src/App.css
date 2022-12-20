@@ -106,3 +106,12 @@ a:hover {
 a:active {
   color: white;
 }
+
+
+.card-body {
+ background-color: #101010;
+}
+
+.card {
+  color:#202020;
+}
