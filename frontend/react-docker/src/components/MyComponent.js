@@ -8,7 +8,7 @@ function MyComponent(props) {
     const [error, setError] = useState(null);
 
     useEffect(() => {
-        fetch(`http://localhost:80/api/read.php?countries=${props.countries}&sources=${props.sources}&categories=${props.categories}`)
+        fetch(`http://localhost/api/read.php?countries=${props.countries}&sources=${props.sources}&categories=${props.categories}`)
             .then(res => res.json())
             .then(
                 (result) => {

@@ -10,7 +10,7 @@ $source = isset($_GET['sources']) && !empty($_GET['sources']) ? $_GET['sources']
 $category = isset($_GET['categories']) && !empty($_GET['categories']) ? $_GET['categories'] : '';
 $country = isset($_GET['countries']) && !empty($_GET['countries']) ? $_GET['countries'] : '';
  
-$apiUrl = 'https://api.mediastack.com/v1/news?access_key=e51b8819364d71188fbdfc28e7a9777a&limit=100&languages=en&date=' . date("Y-m-d");
+$apiUrl = 'https://api.mediastack.com/v1/news?access_key=6db1ad3d06c1feccc3e043269ed2f201&limit=100&languages=en&date=' . date("Y-m-d");
 if (!empty($country)) {
     $apiUrl .= '&countries=' . $country;
 }
